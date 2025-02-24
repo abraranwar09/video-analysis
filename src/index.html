@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Analysis UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar-left">
+            <!-- Left sidebar content -->
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="video-container">
+                    <video controls width="100%" height="auto" autoplay loop muted> 
+                        <source src="./assets/test2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div class="gallery-container">
+                    <div class="gallery">
+                        <div class="gallery-item active">
+                            <img src="./assets/frames/frame_0001.png" alt="Thumbnail 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./assets/frames/frame_0010.png" alt="Thumbnail 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./assets/frames/frame_0020.png" alt="Thumbnail 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./assets/frames/frame_0030.png" alt="Thumbnail 4">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./assets/frames/frame_0040.png" alt="Thumbnail 5">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./assets/frames/frame_0006.png" alt="Thumbnail 6">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./assets/frames/frame_0007.png" alt="Thumbnail 7">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./assets/frames/frame_0020.png" alt="Thumbnail 8">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Report content -->
+                <div class="section">
+                    <div class="section-title">Property Overview</div>
+                    <p class="summary-text">
+                        <span class="label">Description:</span>
+                        <span class="value">The property consists of an agricultural area, several structures, and surrounding fields. The main area of interest appears to be a field of cultivated crops, potentially cannabis, arranged in neat rows with black ground cover.</span>
+                    </p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Object Classification</div>
+                    <div class="detail-row">
+                        <span class="detail-label">People</span>
+                        <span>Several individuals are present throughout the video, most are clustered around the two main buildings.</span>
+                        <span class="risk-score" data-score="60">Risk Score: 60</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Vehicles</span>
+                        <span>Several vehicles, including cars, trucks, and a trailer are visible.</span>
+                        <span class="risk-score" data-score="70">Risk Score: 70</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Gatherings/Groups</span>
+                        <span>There is potential for hidden activity.</span>
+                        <span class="risk-score" data-score="50">Risk Score: 50</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Open Gates/Fences</span>
+                        <span>Some sections of the property appear to have fencing, but there are areas where fences are less visible or complete.</span>
+                        <span class="risk-score" data-score="80">Risk Score: 80</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Unattended Objects</span>
+                        <span>Various items are scattered around the buildings.</span>
+                        <span class="risk-score" data-score="40">Risk Score: 40</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Motion & Anomaly Detection</div>
+                    <p class="summary-text">
+                        <span class="label">Crowd Density Estimation:</span>
+                        <span class="value">The crowd density is relatively low.</span>
+                        <br>
+                        <span class="label">Unexpected Activity Detection:</span>
+                        <span class="value">No clearly unusual or suspicious activity is detected within the video.</span>
+                    </p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Potential Hiding Spots and Vantage Points</div>
+                    <p class="summary-text">
+                        <span class="label">Buildings:</span>
+                        <span class="value">The white building could provide hiding places within and atop it.</span>
+                        <br>
+                        <span class="label">Cultivated Field:</span>
+                        <span class="value">While neatly arranged, the height of the plants might offer some degree of concealment.</span>
+                        <br>
+                        <span class="label">Vehicles:</span>
+                        <span class="value">The trailer and larger trucks, especially covered areas within the trucks, would be ideal to use for concealment.</span>
+                        <br>
+                        <span class="label">Surrounding Fields:</span>
+                        <span class="value">The fields beyond the property boundaries provide potential hiding locations and vantage points for observing activity.</span>
+                    </p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Access Routes and Vulnerabilities</div>
+                    <p class="summary-text">
+                        <span class="label">Open Fences/Gates:</span>
+                        <span class="value">The presence of areas without clear fencing allows for easy access to the property.</span>
+                        <br>
+                        <span class="label">Dirt Roads:</span>
+                        <span class="value">The dirt roads leading to and around the buildings provide access for vehicles.</span>
+                        <br>
+                        <span class="label">Unmonitored Areas:</span>
+                        <span class="value">The expansive nature of the property likely makes it challenging to fully monitor all areas.</span>
+                    </p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Most Likely Hiding Spots</div>
+                    <p class="summary-text">
+                        <span class="label">Inside the buildings.</span>
+                        <br>
+                        <span class="label">Within the larger trucks and trailers.</span>
+                        <br>
+                        <span class="label">In the surrounding fields and tree lines.</span>
+                    </p>
+                </div>
+
+                <div class="video-row">
+                    <div class="video-placeholder">
+                        <h2>Motion Heatmap</h2>
+                        <video controls width="100%" height="auto">
+                            <source src="./assets/heatmaps/dynamic_motion_heatmap.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-placeholder">
+                        <h2>Density Heatmap</h2>
+                        <video controls width="100%" height="auto">
+                            <source src="./assets/heatmaps/density_heatmap.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right sidebar with network signal sweep report -->
+        <aside class="sidebar-right">
+            <div class="signal-sweep-report">
+                <div class="section">
+                    <div class="section-title">RFID Signals</div>
+                    <p class="summary-text">
+                        <span class="label">Detected RFID tags:</span>
+                        <span class="label">2</span>
+                        <br>
+                        <span class="value">Signal strength varies across the area, with the highest concentration near the main building.</span><br><br>
+                        <span class="risk-score" data-score="65">Risk Score: 65</span>
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Tag ID</th>
+                            <th>Location</th>
+                            <th>Signal Strength</th>
+                        </tr>
+                        <tr>
+                            <td>RFID001</td>
+                            <td>Main Building</td>
+                            <td>Strong</td>
+                        </tr>
+                        <tr>
+                            <td>RFID002</td>
+                            <td>Warehouse</td>
+                            <td>Moderate</td>
+                        </tr>
+                        <!-- Additional rows as needed -->
+                    </table>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">WiFi Signals</div>
+                    <p class="summary-text">
+                        <span class="label">Active WiFi networks:</span>
+                        <span class="label">2</span>
+                        <br>
+                        <span class="value">Signal strength is strongest near the central office, with several unsecured networks detected.</span><br><br>
+                        <span class="risk-score" data-score="75">Risk Score: 75</span>
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Network Name</th>
+                            <th>Security</th>
+                            <th>Signal Strength</th>
+                        </tr>
+                        <tr>
+                            <td>OfficeNet</td>
+                            <td>WPA2</td>
+                            <td>Strong</td>
+                        </tr>
+                        <tr>
+                            <td>GuestWiFi</td>
+                            <td>None</td>
+                            <td>Moderate</td>
+                        </tr>
+                        <!-- Additional rows as needed -->
+                    </table>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Other Signals</div>
+                    <p class="summary-text">
+                        <span class="label">Bluetooth devices:</span>
+                        <span class="label">2</span>
+                        <br>
+                        <span class="value">Cellular signals are stable, with 4G coverage throughout the area.</span><br><br>
+                        <span class="risk-score" data-score="50">Risk Score: 50</span>
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Device Name</th>
+                            <th>Type</th>
+                            <th>Signal Strength</th>
+                        </tr>
+                        <tr>
+                            <td>BT_Speaker</td>
+                            <td>Audio</td>
+                            <td>Strong</td>
+                        </tr>
+                        <tr>
+                            <td>BT_Headset</td>
+                            <td>Audio</td>
+                            <td>Weak</td>
+                        </tr>
+                        <!-- Additional rows as needed -->
+                    </table>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
+
